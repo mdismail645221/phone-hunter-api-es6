@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PHONE HUNTER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="py-4 my-4 text-center" >
+        <h1 class=" text-primary fw-bold display-4">WELLCOME PHONE HUNTER STORE</h1>
+    </header>
+
+    <main class="container"> 
+
+        <section class="d-flex justify-content-center align-items-center my-5">
+     
+              <div class="w-70 me-5">
+                <input style="width: 300px ;" type="text" class="d-block p-2" placeholder="search your phone" name="input" id="search-input">
+              </div>
+              <div class="w-30">
+                <button id="search-btn" class="btn btn-primary">Search</button>
+              </div>
+
+        </section>
+
+
+        <section id="spinner-area" class="d-none">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border text-primary" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- phone-items -->
+        <section>
+        <!-- phone-hunter-area -->
+            <div class="phone-hunter-area">
+                <div id="phone-items-list" class="row row-cols-1 row-cols-md-4 g-4">
+
+                  </div> <!--./ row-->
+            </div><!--,/ phone-hunter-area -->
+        </section> <!--./ phone-items -->
+
+
+        <!-- toggle area -->
+            <section>
+                <div id="not-found-message" class="d-none">
+                    <h2 class="text-warning fw-bold display-5">NOT FOUND PHONES</h2>
+                </div>
+            </section> <!-- ./ toggle area -->
+ 
+    </main>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
